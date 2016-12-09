@@ -20,4 +20,4 @@ while i < len(line):
         res += c
         i += 1
 
-print( len(''.join( filter(lambda x: not x.isspace(), res) )))
+print( len( [ x for x in res if not x.isspace() ]))
